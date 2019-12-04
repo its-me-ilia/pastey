@@ -1,0 +1,10 @@
+export const GET_PASTEYS = 'GET_PASTEYS';
+export const GET_PASTEYS_ERR = 'GET_PASTEYS_ERR';
+export const ADD_PASTEY_ERR = 'ADD_PASTEY_ERR';
+export const INIT_PASTEY = 'GET_PASTEY';
+export const INIT_PASTEY_ERR = 'GET_PASTEY_ERR';
+export const DOWNLOAD_ERR = 'DOWNLOAD_ERR';
+export const PRINT_ERR = 'PRINT_ERR';
+export const RAW_REDIR_ERR = 'RAW_REDIR_ERR';
+export const GET_PUBLIC_PASTEYS = 'GET_PUBLIC_PASTEYS';
+export const GET_PUBLIC_PASTEYS_ERR = 'GET_PUBLIC_PASTEYS_ERR';
