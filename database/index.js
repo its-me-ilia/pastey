@@ -2,7 +2,7 @@ require('dotenv').config({
     path: '../.env'
 });
 const mongoose = require('mongoose');
-
+mongoose.Promise = require('bluebird'); //install bluebird first
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useCreateIndex: true,
@@ -24,7 +24,6 @@ for(let schemaName in schemas){
     models[schemaName] = mongoose.model(schemaName, schemas[schemaName])
     console.log(models[schemaName])
 }
-console.log(`kriaxi`)
 module.exports = {
     connection: mongoose.connection,
     models: models
